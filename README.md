@@ -1,11 +1,9 @@
-try to trigger [action]
-
 <div id="top"></div>
 <!--
 *** Thanks for checking out Shecode Website README.md. 
 *** If you have a suggestion that would make this better, 
 *** please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
+*** or simply open an issue with the tag "readme".
 -->
 
 <!-- PROJECT LOGO -->
@@ -15,7 +13,7 @@ try to trigger [action]
 <!-- Make badges at https://shields.io/ -->
 <p align="center">
 <a href="https://github.com/She-Codes-PCC/website/graphs/contributors" title="Contributors">
-<img src="https://img.shields.io/github/contributors-anon/She-Codes-PCC/website?label=Contributors&logo=github&style=flat-square" alt="Project Initiator Contributors">
+<img src="https://img.shields.io/github/contributors/She-Codes-PCC/website?label=Contributor&logo=github&style=flat-square" alt="Project Initiator Contributors">
 </a>
 <a href="https://github.com/She-Codes-PCC/website/fork" title="Forks">
 <img src="https://img.shields.io/github/forks/She-Codes-PCC/website?label=Forks&logo=github&style=flat-square" alt="Project Initiator Forks"/>
