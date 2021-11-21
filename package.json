@@ -1,4 +1,10 @@
 {
+	"name": "website",
+	"version": "0.1.0",
+	"description": "She Codes PCC website",
+	"main": "src/index.js",
+	"author": "She Codes PCC Contributors",
+	"license": "Apache-2.0",
 	"scripts": {
 		"start": ""
 	},
