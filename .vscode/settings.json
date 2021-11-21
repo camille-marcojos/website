@@ -1,6 +1,15 @@
 {
+	/* general */
 	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true,
+		"source.organizeImports": true
+	},
+
+	/* prettier */
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
+
+	/* eslint */
 	"javascript.format.enable": true,
 	"[javascript]": {
 		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -8,6 +17,10 @@
 	"[javascriptreact]": {
 		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
 	},
+
+	/* stylelint */
+	"css.validate": false,
+	"stylelint.enable": true,
 	"[css]": {
 		"editor.defaultFormatter": "stylelint.vscode-stylelint"
 	}

@@ -55,9 +55,9 @@
 - `yarn run format:fix`
   - Fix formatting errors
 - `yarn run lint`
-  - Show linting errors
+  - Show linting errors (JS and CSS)
 - `yarn run lint:fix`
-  - Fix fixable linting errors
+  - Fix fixable linting errors (JS and CSS)
 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
