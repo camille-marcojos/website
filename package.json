@@ -6,7 +6,11 @@
 	"author": "She Codes PCC Contributors",
 	"license": "Apache-2.0",
 	"scripts": {
-		"start": ""
+		"dev": "next dev",
+		"format": "prettier --check \"**/*.{js,jsx,css,md,mdx,yaml,yml,toml}\"",
+		"format:fix": "prettier --write \"**/*.{js,jsx,css,md,mdx,yaml,yml,toml}\"",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix ."
 	},
 	"devDependencies": {
 		"eslint": "^8.3.0",
