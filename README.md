@@ -6,9 +6,6 @@
 *** or simply open an issue with the tag "readme".
 -->
 
-<!-- PROJECT LOGO -->
-<!-- TODO: ADD Logo -->
-
 <!-- PROJECT SHIELDS -->
 <!-- Make badges at https://shields.io/ -->
 <p align="center">
@@ -47,17 +44,6 @@
 
 - Node
 - [React](https://reactjs.org/)
-
-### Scripts
-
-- `yarn run format`
-  - Show formatting errors
-- `yarn run format:fix`
-  - Fix formatting errors
-- `yarn run lint`
-  - Show linting errors (JS and CSS)
-- `yarn run lint:fix`
-  - Fix fixable linting errors (JS and CSS)
 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
