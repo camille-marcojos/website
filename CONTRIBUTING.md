@@ -8,9 +8,11 @@
 
 ### 1. Open the repository in VS Code
 
-You should get a prompt to "install the recommended extensions for this repository"
+### Should get a prompt to "install the recommended extensions for this repository"
 
 - click install
+
+<br>
 
 ### What am I agreeing to install?
 
@@ -41,7 +43,6 @@ You should get a prompt to "install the recommended extensions for this reposito
 
 ## How to check & fix errors/warnings
 
-<!-- Video -->
 
 ### How to open the problems tool
 
@@ -49,9 +50,25 @@ You should get a prompt to "install the recommended extensions for this reposito
 
 <br>
 
-### What happens when I save the file?
+### What happens when I save a JavaScript or CSS file?
 
-- Check out the comments in the .vscode/settings.json file for info
+- The file is formated
+- The file is linted. All auto fixable error/warnings are fixed. Some error/warnings need to be manually fixed
+
+<br>
+
+### How is this even happening? Check out the following files: 
+  - .editorconfig
+  - .eslintrc.json
+  - .prettierrc.json
+  - .stylelintrc.json
+
+<br>
+
+
+Example:
+<!-- Gif-->
+![how_to_eslint_save_gif](https://user-images.githubusercontent.com/77143564/142934788-cf888837-4bd9-41cd-b096-278791d97f08.gif)
 
 <br>
 
@@ -69,7 +86,7 @@ You should get a prompt to "install the recommended extensions for this reposito
 
 <br>
 
-### I'd rather use some cool scripts:
+### I want to use some cool scripts:
 
 - `yarn run format`
   - Show formatting errors
