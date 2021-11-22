@@ -1,53 +1,75 @@
-These are just instructions to add to the final contributing file
+**These are just instructions to add to the final contributing file**
+
+## Install VS Code extensions
+
+### [Download VS Code](https://code.visualstudio.com/)
+
+<br>
+
+### 1. Open the repository in VS Code
+
+You should get a prompt to "install the recommended extensions for this repository"
+
+- click install
+
+### What am I agreeing to install?
+
+- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+- [Prettier Code Formatting](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+
+<br>
 
 ## Install Dependancies
 
 ### 1. Check if yarn is installed `yarn --version`
 
-- See a version number? move onto step 2)
-  <br>
 - See `command not found: yarn` install [yarn](https://classic.yarnpkg.com/lang/en/docs/install/)
+  <br>
+- See a version number? move onto "Learn how to check for errors/warnings"
+
+<br>
 
 ### 2. Install dependancies `yarn install`
 
-<br>
+### What am I agreeing to install?
 
-## Learn how to check for errors/warnings
+- Check the package.json file for a list of dependancies
 
-### 1. Open problems tool
-
-- shift + command/ctrl + M
   <br>
-  or
-- view > Problems
 
-### 2. Learn how to see problems
+## How to check & fix errors/warnings
 
-- Open test.js
+<!-- Video -->
 
-- Should see the following errors (red 'x' w/ circle) & warnings ('!' w/ triangle )
+### How to open the problems tool
 
-### 3. Learn fix on save
-
-- Open test.css
-
-- Should see the following errors & warnings
-
-- Save test.css
-
-- Problems should be fixed
-
-Note: Learn how this setting works in the .vscode/settings.json file.
-
-### 4. Check out what happens when you hover over an error/warning
-
-- Hover over the red 'x' or yellow '!' should see a a lightbulb. Click on the lightbulb to see options
-  - Note: do not disable errors/warnings
-- Click on eslint(links) to see descriptions that can help you debug
+- `shift + command/ctrl + M` or `view > Problems`
 
 <br>
 
-## Scripts
+### What happens when I save the file?
+
+- Check out the comments in the .vscode/settings.json file for info
+
+<br>
+
+### What happens when I click the yellow light bulb?
+
+- Click on the lightbulb to see options
+  - Do not disable errors/warnings. This could cause bugs
+
+<br>
+
+### What does this error mean?
+
+- Hover over the error
+- Click on eslint("link") to see descriptions that can help you debug
+
+<br>
+
+### I'd rather use some cool scripts:
 
 - `yarn run format`
   - Show formatting errors
@@ -57,3 +79,8 @@ Note: Learn how this setting works in the .vscode/settings.json file.
   - Show linting errors (JS and CSS)
 - `yarn run lint:fix`
   - Fix fixable linting errors (JS and CSS)
+
+<br>
+
+Have fun!
+<br>
