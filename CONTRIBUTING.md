@@ -1,4 +1,5 @@
 **These are just instructions to add to the final contributing file**
+Note: feel free to edit
 
 ## Install VS Code extensions
 
@@ -27,7 +28,7 @@
 
 ### 1. Check if yarn is installed `yarn --version`
 
-- See `command not found: yarn` install [yarn](https://classic.yarnpkg.com/lang/en/docs/install/)
+- See `command not found: yarn` [install yarn](https://classic.yarnpkg.com/lang/en/docs/install/)
   <br>
 - See a version number? move onto "Learn how to check for errors/warnings"
 
@@ -52,12 +53,13 @@
 
 ### What happens when I save a JavaScript or CSS file?
 
-- The file is formated
-- The file is linted. All auto fixable error/warnings are fixed. Some error/warnings need to be manually fixed
+- The file is formated.
+- The file is linted. All auto-fixable errors/warnings are fixed. Some errors/warnings need to be manually fixed.
 
 <br>
 
 ### How is this even happening? Check out the following files: 
+  - .vscode/settings.json
   - .editorconfig
   - .eslintrc.json
   - .prettierrc.json
@@ -82,7 +84,7 @@ Example:
 ### What does this error mean?
 
 - Hover over the error
-- Click on eslint("link") to see descriptions that can help you debug
+- Click on the error link to view docs that can help you debug
 
 <br>
 
