@@ -8,13 +8,17 @@ orbs:
   # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/node
   node: circleci/node@4.7
 
-jobs:
-  build:
-    # These next lines define a Docker executor: https://circleci.com/docs/2.0/executor-types/
+executors:
+  # These next lines define a Docker executor: https://circleci.com/docs/2.0/executor-types/
     # You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # A list of available CircleCI Docker Convenience Images are available here: https://circleci.com/developer/images/image/cimg/node
+  node:
     docker:
       - image: cimg/node:16.10
+
+jobs:
+  build:
+    executor: node
     steps:
       - checkout # pulls source code to the working directory
 
@@ -24,14 +28,20 @@ jobs:
           pkg-manager: yarn
 
   format:
-    - run:
-        name: Prettier Format Fix
-        command: yarn run format:fix # Fix Prettier formatting errors
+    executor: node
+    steps:
+      - checkout
+      - run:
+          name: Prettier Format Fix
+          command: yarn run format:fix # Fix Prettier formatting errors
 
   lint:
-    - run:
-        name: ESLint & Stylelint Fix
-        command: yarn run lint:fix # Fix auto fixable linting errors (JS and CSS)
+    executor: node
+    steps:
+      - checkout
+      - run:
+          name: ESLint & Stylelint Fix
+          command: yarn run lint:fix # Fix auto fixable linting errors (JS and CSS)
 
 workflows:
   # Below is the definition of your workflow.
@@ -42,6 +52,8 @@ workflows:
     jobs:
       - build
       - format:
-        requires: build
+          requires: 
+            - build
       - lint:
-        requires: build
+          requires: 
+            - build
