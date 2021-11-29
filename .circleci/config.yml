@@ -16,6 +16,19 @@ executors:
     docker:
       - image: cimg/node:16.10
 
+commands:
+  prettier-format:
+    steps:
+      - run:
+          name: Prettier Format Fix
+          command: yarn run format:fix # Fix auto fixable Prettier formatting errors
+  
+  eslint-and-stylelint-fix:
+    steps:
+      - run:
+          name: ESLint & Stylelint Fix
+          command: yarn run lint:fix # Fix auto fixable linting errors (JS and CSS)
+
 jobs:
   build:
     executor: node
@@ -31,18 +44,14 @@ jobs:
     executor: node
     steps:
       - checkout
-      - run:
-          name: Prettier Format Fix
-          command: yarn run format:fix # Fix Prettier formatting errors
-
+      - prettier-format
+      
   lint:
     executor: node
     steps:
       - checkout
-      - run:
-          name: ESLint & Stylelint Fix
-          command: yarn run lint:fix # Fix auto fixable linting errors (JS and CSS)
-
+      - eslint-and-stylelint-fix
+      
 workflows:
   # Below is the definition of your workflow.
   # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
