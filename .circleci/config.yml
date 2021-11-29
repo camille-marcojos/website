@@ -10,7 +10,8 @@ orbs:
 
 jobs:
   # Below is the definition of your job to build and test your app, you can rename and customize it as you want.
-  build-and-test:
+
+  build-and-fix:
     # These next lines define a Docker executor: https://circleci.com/docs/2.0/executor-types/
     # You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # A list of available CircleCI Docker Convenience Images are available here: https://circleci.com/developer/images/image/cimg/node
@@ -21,20 +22,27 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
+
+      # Special step used to upload and store test results for a build.
+      # Test results are visible on the CircleCI web application, under each build’s “Test Summary” section. Storing test results is useful for timing analysis of your test suites.
+      - store_test_results:
+        path: test-results
+
       # Next, the node orb's install-packages step will install the dependencies from a package.json.
       # The orb install-packages step will also automatically cache them for faster future runs.
       - node/install-packages:
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: yarn
+
       - run:
           # Fix Prettier formatting errors
           name: Prettier Format Fix
           command: yarn run format:fix
+
       - run:
           # Fix auto fixable linting errors (JS and CSS)
           name: ESLint & Stylelint Fix
           command: yarn run lint:fix
-
 
 workflows:
   # Below is the definition of your workflow.
@@ -43,6 +51,6 @@ workflows:
   # For more details on extending your workflow, see the configuration docs: https://circleci.com/docs/2.0/configuration-reference/#workflows
   sample:
     jobs:
-      - build-and-test
+      - build-and-fix
       # For running simple node tests, you could optionally use the node/test job from the orb to replicate and replace the job above in fewer lines.
       # - node/test
