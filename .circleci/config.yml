@@ -26,6 +26,14 @@ jobs:
       # The orb install-packages step will also automatically cache them for faster future runs.
       - node/install-packages:
           pkg-manager: yarn
+
+      - run:
+          name: Prettier Format Fix
+          command: yarn run format:fix # Fix auto fixable Prettier formatting errors
+      
+      - run:
+          name: ESLint & Stylelint Fix
+          command: yarn run lint:fix # Fix auto fixable linting errors (JS and CSS)
           
       
       
@@ -38,13 +46,13 @@ jobs:
   #         name: Prettier Format Fix
   #         command: yarn run format:fix # Fix auto fixable Prettier formatting errors
       
-  lint:
-    executor: node
-    steps:
-      - checkout
-      - run:
-          name: ESLint & Stylelint Fix
-          command: yarn run lint:fix # Fix auto fixable linting errors (JS and CSS)
+  # lint:
+  #   executor: node
+  #   steps:
+  #     - checkout
+  #     - run:
+  #         name: ESLint & Stylelint Fix
+  #         command: yarn run lint:fix # Fix auto fixable linting errors (JS and CSS)
       
 workflows:
   # Below is the definition of your workflow.
@@ -57,6 +65,6 @@ workflows:
       # - format:
       #     requires: 
       #       - build
-      - lint:
-          requires: 
-            - build
+      # - lint:
+      #     requires: 
+      #       - build
