@@ -26,17 +26,17 @@ jobs:
       # The orb install-packages step will also automatically cache them for faster future runs.
       - node/install-packages:
           pkg-manager: yarn
-          app-dir: "~/project"
+          
       
       
 #  figure out why this isn't accessing the cache from build
-  format:
-    executor: node
-    steps:
-      - checkout
-      - run:
-          name: Prettier Format Fix
-          command: yarn run format:fix # Fix auto fixable Prettier formatting errors
+  # format:
+  #   executor: node
+  #   steps:
+  #     - checkout
+  #     - run:
+  #         name: Prettier Format Fix
+  #         command: yarn run format:fix # Fix auto fixable Prettier formatting errors
       
   lint:
     executor: node
@@ -54,9 +54,9 @@ workflows:
   format-and-lint:
     jobs:
       - build
-      - format:
-          requires: 
-            - build
+      # - format:
+      #     requires: 
+      #       - build
       - lint:
           requires: 
             - build
