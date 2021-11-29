@@ -27,9 +27,6 @@ jobs:
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: yarn
       - run:
-          name: Run tests
-          command: npm test
-      - run:
           # Fix Prettier formatting errors
           name: Prettier Format Fix
           command: yarn run format:fix
