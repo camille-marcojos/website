@@ -32,11 +32,15 @@ jobs:
           command: yarn run format:fix # Fix auto fixable Prettier formatting errors
       
       - run:
-          name: ESLint & Stylelint Fix
-          command: yarn run lint:fix # Fix auto fixable linting errors (JS and CSS)
+          name: ESLint Fix
+          command: lintjs:fix # Fix auto fixable linting errors (JS)
+      
+      - run:
+          name: Stylelint Fix
+          command: lintcss:fix # Fix auto fixable linting errors (CSS)
+      
+      
           
-      
-      
 #  figure out why this isn't accessing the cache from build
   # format:
   #   executor: node
@@ -46,13 +50,22 @@ jobs:
   #         name: Prettier Format Fix
   #         command: yarn run format:fix # Fix auto fixable Prettier formatting errors
       
-  # lint:
+  # eslint:
   #   executor: node
   #   steps:
   #     - checkout
   #     - run:
-  #         name: ESLint & Stylelint Fix
-  #         command: yarn run lint:fix # Fix auto fixable linting errors (JS and CSS)
+  #         name: ESLint Fix
+  #         command: lintjs:fix # Fix auto fixable linting errors (JS)
+
+  # stylelint:
+  #   executor: node
+  #   steps:
+  #     - checkout
+  #     - run:
+  #         name: Stylelint Fix
+  #         command: lintcss:fix # Fix auto fixable linting errors (CSS)
+
       
 workflows:
   # Below is the definition of your workflow.
@@ -65,6 +78,9 @@ workflows:
       # - format:
       #     requires: 
       #       - build
-      # - lint:
+      # - eslint:
+      #     requires: 
+      #       - build
+      # - stylelint:
       #     requires: 
       #       - build
