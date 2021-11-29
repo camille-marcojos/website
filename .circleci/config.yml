@@ -15,7 +15,7 @@ executors:
   node:
     docker:
       - image: cimg/node:16.10
-      
+
 jobs:
   build:
     executor: node
@@ -26,11 +26,14 @@ jobs:
       # The orb install-packages step will also automatically cache them for faster future runs.
       - node/install-packages:
           pkg-manager: yarn
+          app-dir: "~/project"
       
-
+      
+#  figure out why this isn't accessing the cache from build
   format:
     executor: node
     steps:
+      - checkout
       - run:
           name: Prettier Format Fix
           command: yarn run format:fix # Fix auto fixable Prettier formatting errors
@@ -38,6 +41,7 @@ jobs:
   lint:
     executor: node
     steps:
+      - checkout
       - run:
           name: ESLint & Stylelint Fix
           command: yarn run lint:fix # Fix auto fixable linting errors (JS and CSS)
