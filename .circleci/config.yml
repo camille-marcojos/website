@@ -33,11 +33,11 @@ jobs:
       
       - run:
           name: ESLint Fix
-          command: lintjs:fix # Fix auto fixable linting errors (JS)
+          command: run-s -c lintjs:fix # Fix auto fixable linting errors (JS)
       
       - run:
           name: Stylelint Fix
-          command: lintcss:fix # Fix auto fixable linting errors (CSS)
+          command: run-s -c lintcss:fix # Fix auto fixable linting errors (CSS)
       
       
           
