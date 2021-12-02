@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start NextJS",
+			"type": "shell",
+			"command": "yarn run dev"
+		},
+		{
+			"label": "Fix formatting for all code",
+			"type": "shell",
+			"command": "yarn run format:fix"
+		},
+		{
+			"label": "Fix lint for JavaScript",
+			"type": "shell",
+			"command": "yarn run lintjs:fix"
+		},
+		{
+			"label": "Fix lint for CSS",
+			"type": "shell",
+			"command": "yarn run lintcss:fix"
+		}
+	]
+}

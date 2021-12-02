@@ -1,13 +1,10 @@
 <div id="top"></div>
 <!--
-*** Thanks for checking out Shecode Website README.md. 
-*** If you have a suggestion that would make this better, 
+*** Thanks for checking out Shecode Website README.md.
+*** If you have a suggestion that would make this better,
 *** please fork the repo and create a pull request
 *** or simply open an issue with the tag "readme".
 -->
-
-<!-- PROJECT LOGO -->
-<!-- TODO: ADD Logo -->
 
 <!-- PROJECT SHIELDS -->
 <!-- Make badges at https://shields.io/ -->
@@ -27,7 +24,7 @@
 <a href="https://github.com/She-Codes-PCC/website" title="Repo Size">
 <img src="https://img.shields.io/github/repo-size/She-Codes-PCC/website?label=Repo%20Size&logo=github&style=flat-square" alt="Project Initiator Repo Size"/>
 </a>
-    
+
 <!-- Need to change -->
 
 <a href="https://discord.com/invite/wpb9kmD6gp" title="Join Community">
@@ -47,7 +44,6 @@
 
 - Node
 - [React](https://reactjs.org/)
-
 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors

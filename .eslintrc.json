@@ -1,0 +1,9 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"airbnb",
+		"airbnb/hooks",
+		"plugin:import/recommended",
+		"plugin:prettier/recommended"
+	]
+}
