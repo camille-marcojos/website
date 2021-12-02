@@ -27,5 +27,10 @@
 	"stylelint.enable": true,
 	"[css]": {
 		"editor.defaultFormatter": "stylelint.vscode-stylelint"
-	}
+	},
+
+	/* remove spelling err */
+	"cSpell.words": [
+		"Walkthrough"
+	]
 }
