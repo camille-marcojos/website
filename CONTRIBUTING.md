@@ -118,4 +118,4 @@ There are complimentary tools like [Husky](https://github.com/typicode/husky) an
 * Do not end subject line with period
 * Wrap the body at 72 characters
 * Use body to explain what and why vs how
-* Reference [this post](https://cbea.ms/git-commit/) for more help and guidelines for good commit messgaes
+* Reference [this post](https://cbea.ms/git-commit/) for more help and guidelines for good commit messages
