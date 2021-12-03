@@ -8,11 +8,13 @@
 
 [What to Know Before Getting Started](#what-to-know-before-getting-started)
 
+[Setting Up Your Coding Environment](#setting-up-your-coding-environment)
+
 [How To Contribute](#how-to-contribute)
 
 * [Beginner's Walkthrough](#beginner's-walkthrough)
 
-[Style Guideline](#style-guidelines)
+[Style Guidelines](#style-guidelines)
 
 * [JavaScript Style Guide](#javascript-style-guide)
   * [Linting Configurations](#linting-configurations)
@@ -20,17 +22,103 @@
 * [Branch Naming](#branch-naming)
 * [Commit Messages](#commit-messages)
 
-## I don't want to read this whole thing... I just have a question
+## **I don't want to read this whole thing... I just have a question**
 
 The best way to get questions answered is to reach out to the She.Codes Projects Committee via [Discord](https://discord.gg/y4SRsjP45S).
+___
 
-## What to Know Before Getting Started
+## **What to Know Before Getting Started**
 
 We are a small team working to create a website for the She.Codes club at Pasadena City College.
 Currently we are using JavaScript, Node, React, and Next.js to build our website.
 We welcome everyone who wants to help, whether you are an experienced coder or are brand new and hoping to learn web development skills.
 
-## How to Contribute
+___
+
+## **Setting Up Your Coding Environment**
+
+## Install VS Code extensions
+
+### [Download VS Code](https://code.visualstudio.com/)
+
+### 1. Open the repository in VS Code
+
+### Should get a prompt to "install the recommended extensions for this repository"
+
+* click install
+
+### What am I agreeing to install?
+
+* [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+* [Prettier Code Formatting](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+* Check the package.json file for a list of dependencies
+
+<!-- markdownlint-disable-next-line -->
+<br>
+
+## Install Dependencies
+
+### 1. Check if yarn is installed `yarn --version`
+
+* See `command not found: yarn` install [yarn](https://classic.yarnpkg.com/lang/en/docs/install/)
+* See a version number? move onto "Learn how to check for errors/warnings"
+
+### 2. Install dependencies `yarn install`\
+
+<!-- markdownlint-disable-next-line -->
+<br>
+
+## How to check & fix errors/warnings
+
+### How to open the problems tool
+
+* `shift + command/ctrl + M` or `view > Problems`
+
+### What happens when I save a JavaScript or CSS file?
+
+* The file is formated
+* The file is linted. All auto fixable error/warnings are fixed. Some error/warnings need to be manually fixed
+
+### How is this even happening? Check out the following files
+
+* .editorconfig
+* .eslintrc.json
+* .prettierrc.json
+* .stylelintrc.json
+
+Example:
+
+<!-- Gif-->
+
+![how_to_eslint_save_gif](https://user-images.githubusercontent.com/77143564/142934788-cf888837-4bd9-41cd-b096-278791d97f08.gif)
+
+### What happens when I click the yellow light bulb?
+
+* Click on the lightbulb to see options
+  * Do not disable errors/warnings. This could cause bugs
+
+### What does this error mean?
+
+* Hover over the error
+* Click on eslint("link") to see descriptions that can help you debug
+
+### I want to use some cool scripts
+
+* `yarn run format`
+  * Show formatting errors
+* `yarn run format:fix`
+  * Fix formatting errors
+* `yarn run lint`
+  * Show linting errors (JS and CSS)
+* `yarn run lint:fix`
+  * Fix fixable linting errors (JS and CSS)
+
+Have fun!
+___
+
+## **How to Contribute**
 
 ### Beginner's Walkthrough
 
@@ -59,11 +147,14 @@ We welcome everyone who wants to help, whether you are an experienced coder or a
 **5. Push & Pull.**
 
 * When your code is ready for feedback push your branch remotely and create a pull request so it can be reviewed by our team.
+* Make sure your issue is linked to your pull request.
 * Once 2 reviewers approve your pull request we will merge it to the master.
 * Make sure to keep an eye on any comments or updates on your pull request in case the reviewers need you to make some changes or adjustments before merging your branch.
 * If it is taking a while for us to review your pull request, go ahead and send us a message or ping us on discord.
 
-## Style Guidelines
+___
+
+## **Style Guidelines**
 
 ### JavaScript Style Guide
 
