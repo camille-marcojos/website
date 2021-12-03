@@ -29,13 +29,6 @@
 		"editor.defaultFormatter": "stylelint.vscode-stylelint"
 	},
 
-	/* remove spelling err */
-	"cSpell.words": [
-		"markdownlint",
-		"Pretiter",
-		"Prettiter",
-		"Shecode",
-		"Stylelint",
-		"Walkthrough"
-	]
+	/* spell chck hints instead of problems */
+	"cSpell.diagnosticLevel": "Hint",
 }
