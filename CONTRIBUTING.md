@@ -79,7 +79,7 @@ This project includes configurations that sets up the following:
 
 Some nifty features:
 
-* Automatically fix formatting issues (tabs instead of spaces, etc.) with Pretiter and the EditorConfig config
+* Automatically fix formatting issues (tabs instead of spaces, etc.) with Prettiter and the EditorConfig config
 * Automatically fix JS linting issues (sort `import` statements, use `let` instead of `var`, etc.)
 * Automatically fix CSS linting issues (wrong units, duplicate statements, etc.)
 * Configured [VSCode tasks](https://code.visualstudio.com/docs/editor/tasks)

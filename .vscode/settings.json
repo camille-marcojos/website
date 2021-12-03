@@ -31,6 +31,10 @@
 
 	/* remove spelling err */
 	"cSpell.words": [
+		"markdownlint",
+		"Pretiter",
+		"Prettiter",
+		"Shecode",
 		"Stylelint",
 		"Walkthrough"
 	]
