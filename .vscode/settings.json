@@ -28,7 +28,4 @@
 	"[css]": {
 		"editor.defaultFormatter": "stylelint.vscode-stylelint"
 	},
-
-	/* spell chck hints instead of problems */
-	"cSpell.diagnosticLevel": "Hint",
 }
