@@ -7,7 +7,7 @@
 			"command": "yarn run dev"
 		},
 		{
-			"label": "Fix formatting for js,jsx,css,md,mdx,yaml,yml,toml",
+			"label": "Fix formatting for all code",
 			"type": "shell",
 			"command": "yarn run format:fix"
 		},
