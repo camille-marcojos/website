@@ -1,0 +1,44 @@
+#  This workflow will install and cache yarn dependencies, format code, and lint
+#  JavaScript, CSS
+name: Format and Lint CI
+# Triggers the workflow on push or pull request events
+on: [push, pull_request]
+
+jobs:
+  format-and-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Caching yarn dependencies
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'yarn'
+
+      - name: Install yarn dependencies
+        # Ensure yarn.lock is not updated using `--frozen-lockfile`
+        run: yarn --frozen-lockfile
+
+      # Note: Some errors must be manually fixed
+      # See `package.json` to see what the following scripts are doing
+
+      - name: Fix formatting for js,jsx,css,md,mdx,yaml,yml,toml
+        # Fix formatting using prettier
+        run: yarn run format:fix
+
+      - name: Fix lint for js
+        if: always()
+        # Fix linting JS errors using eslint
+        run: yarn run lintjs:fix
+
+      - name: Fix lint for css
+        # Runs regardless of errors
+        if: always()
+        # Fix linting CSS errors using stylelint
+        run: yarn run lintcss:fix
+
+      # Commits formatting and linting fixes to files in the repo
+      # More info: https://github.com/EndBug/add-and-commit
+      - uses: EndBug/add-and-commit@v7
