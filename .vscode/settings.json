@@ -27,5 +27,5 @@
 	"stylelint.enable": true,
 	"[css]": {
 		"editor.defaultFormatter": "stylelint.vscode-stylelint"
-	}
+	},
 }

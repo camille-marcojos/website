@@ -1,3 +1,4 @@
+<!-- markdownlint-disable -->
 <div id="top"></div>
 <!--
 *** Thanks for checking out Shecode Website README.md.
@@ -40,7 +41,7 @@
 <p>This is the She.Codes PCC student club website created by a team of 🎨 Designers and 👩‍💻 Software Engineers.</p>
 <!-- TODO: Add tag line -->
 
-### Built With
+## Built With
 
 - Node
 - [React](https://reactjs.org/)
