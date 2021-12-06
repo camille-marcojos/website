@@ -1,8 +1,10 @@
 #  This workflow will install and cache yarn dependencies, format code, and lint
 #  JavaScript, CSS
 name: Format and Lint CI
-# Triggers the workflow on push or pull request events
-on: [push, pull_request]
+# Workflow runs on push (excluding master branch)
+on:
+  push:
+    branches-ignore: [master]
 
 jobs:
   format-and-lint:
@@ -18,27 +20,15 @@ jobs:
           cache: 'yarn'
 
       - name: Install yarn dependencies
-        # Ensure yarn.lock is not updated using `--frozen-lockfile`
         run: yarn --frozen-lockfile
 
-      # Note: Some errors must be manually fixed
-      # See `package.json` to see what the following scripts are doing
-
-      - name: Fix formatting for js,jsx,css,md,mdx,yaml,yml,toml
-        # Fix formatting using prettier
-        run: yarn run format:fix
-
-      - name: Fix lint for js
-        if: always()
-        # Fix linting JS errors using eslint
-        run: yarn run lintjs:fix
-
-      - name: Fix lint for css
-        # Runs regardless of errors
-        if: always()
-        # Fix linting CSS errors using stylelint
-        run: yarn run lintcss:fix
-
-      # Commits formatting and linting fixes to files in the repo
-      # More info: https://github.com/EndBug/add-and-commit
-      - uses: EndBug/add-and-commit@v7
+      # Auto fixes formatting and linting issues
+      # Shows issues that need to be manually fixed
+      # More info: https://github.com/wearerequired/lint-action
+      - name: Run linters
+        uses: wearerequired/lint-action@v1
+        with:
+          prettier: true
+          eslint: true
+          stylelint: true
+          auto_fix: true
