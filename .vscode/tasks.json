@@ -6,19 +6,16 @@
 			"type": "shell",
 			"command": "yarn run dev"
 		},
-
 		{
 			"label": "Fix formatting for js,jsx,css,md,mdx,yaml,yml,toml",
 			"type": "shell",
 			"command": "yarn run format:fix"
 		},
-
 		{
 			"label": "Fix lint for JavaScript",
 			"type": "shell",
 			"command": "yarn run lintjs:fix"
 		},
-
 		{
 			"label": "Fix lint for CSS",
 			"type": "shell",
