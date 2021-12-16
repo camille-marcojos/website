@@ -1,16 +1,13 @@
-#  This workflow will install and cache yarn dependencies, format code, and lint
-#  JavaScript, CSS
+#  This workflow will format, lint, and auto fix
 name: Format and Lint CI
-# Workflow runs on push (excluding master branch)
-on:
-  push:
-    branches-ignore: [master]
+on: [push, pull_request]
 
 jobs:
   format-and-lint:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
       - uses: actions/checkout@v2
 
       - name: Caching yarn dependencies
@@ -29,7 +26,6 @@ jobs:
         uses: wearerequired/lint-action@v1
         with:
           prettier: true
-          prettier_args: --ignore .github/
           eslint: true
           stylelint: true
           auto_fix: true

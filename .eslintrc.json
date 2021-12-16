@@ -1,18 +1,11 @@
 {
 	"extends": [
 		"eslint:recommended",
-		"airbnb",
-		"airbnb/hooks",
+		"google",
 		"next/core-web-vitals",
 		"plugin:prettier/recommended"
 	],
 	"rules": {
-		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-		"react/function-component-definition": [
-			2,
-			{
-				"namedComponents": "function-declaration"
-			}
-		]
+		"require-jsdoc": "off"
 	}
 }
