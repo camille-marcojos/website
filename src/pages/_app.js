@@ -4,7 +4,6 @@ export default function App({ Component, pageProps }) {
 	return <Component {...pageProps} />
 }
 
-
 /*
 TODO:
 Make sure app.js file is formatted correctly
