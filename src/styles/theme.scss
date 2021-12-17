@@ -6,12 +6,12 @@
 @import '@rmwc/icon/icon.css';
 @import '@material/ripple/dist/mdc.ripple.css';
 
+@import '@material/theme/dist/mdc.theme.css';
+@import '@rmwc/theme/theme.css';
+
 /* Theme - info: https://rmwc.io/styling-theming */
 :root {
 	--mdc-theme-primary: #3c36f1;
 	--mdc-theme-secondary: #006b5a;
 	--mdc-theme-error: #ffb4a9;
 }
-
-@import '@material/theme/dist/mdc.theme.css';
-@import '@rmwc/theme/theme.css';
