@@ -1,10 +1,10 @@
 import React from 'react'
 import Header from '../components/Header'
 
-export default function HomePage() {
+export default function ResourcesPage() {
 	return (
 		<div>
-			<Header title="Home" />
+			<Header title="Resources 💻" />
 		</div>
 	)
 }

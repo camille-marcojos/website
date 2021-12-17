@@ -1,10 +1,10 @@
 import React from 'react'
 import Header from '../components/Header'
 
-export default function GetInvolvedPage() {
+export default function HomePage() {
 	return (
 		<div>
-			<Header title="Get Involved" />
+			<Header title="Home 😃" />
 		</div>
 	)
 }
