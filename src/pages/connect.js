@@ -4,7 +4,10 @@ import Header from '../components/Header'
 export default function ConnectPage() {
 	return (
 		<div>
-			<Header title="Contact" description="Connect with us 👋" />
+			<Header
+				title="Hi 👋"
+				description="Meet peeps interested in coding things"
+			/>
 		</div>
 	)
 }

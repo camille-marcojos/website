@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function MyRouter() {
 	return (
 		<div>
-			{/* TODO: Fix error in dev console: findDOMNode is deprecated in StrictMod */}
+			{/* TODO: Fix error in dev console: findDOMNode is deprecated in StrictMode */}
 			<Link href="/" passHref>
 				<Button label="Home" />
 			</Link>

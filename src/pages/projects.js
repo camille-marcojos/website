@@ -6,8 +6,8 @@ export default function ProjectsPage() {
 	return (
 		<div>
 			<Header
-				title="Current Projects"
-				description="Create some cool things 🚀"
+				title="Current Projects 🚀"
+				description="Create some cool things"
 			/>
 			<Link href="/project-details"> Project Details </Link>
 		</div>

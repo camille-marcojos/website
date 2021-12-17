@@ -1,3 +1,11 @@
+/* Typography - info: https://rmwc.io/typography */
+@import '@material/typography/dist/mdc.typography.css';
+
+/* Buttons - info: https://rmwc.io/buttons */
+@import '@material/button/dist/mdc.button.css';
+@import '@rmwc/icon/icon.css';
+@import '@material/ripple/dist/mdc.ripple.css';
+
 /* Theme - info: https://rmwc.io/styling-theming */
 :root {
 	--mdc-theme-primary: #3c36f1;
@@ -7,19 +15,3 @@
 
 @import '@material/theme/dist/mdc.theme.css';
 @import '@rmwc/theme/theme.css';
-
-/* Typography - info: https://rmwc.io/typography */
-@import '@material/typography/dist/mdc.typography.css';
-
-/* Buttons - info: https://rmwc.io/buttons */
-@import '@material/button/dist/mdc.button.css';
-@import '@rmwc/icon/icon.css';
-@import '@material/ripple/dist/mdc.ripple.css';
-
-/* Tabs */
-@import '@material/tab-bar/dist/mdc.tab-bar.css';
-@import '@material/tab/dist/mdc.tab.css';
-@import '@material/tab-scroller/dist/mdc.tab-scroller.css';
-@import '@material/tab-indicator/dist/mdc.tab-indicator.css';
-@import '@material/ripple/dist/mdc.ripple.css';
-@import '@rmwc/icon/icon.css';
