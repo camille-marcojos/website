@@ -1,10 +1,9 @@
 import { Typography } from '@rmwc/typography'
-import Link from 'next/link'
 
 export default function Header({ title }) {
 	return (
 		<div>
-			<ul>
+			{/* <ul>
 				<li>
 					<Link href="/">
 						<a>Home</a>
@@ -25,7 +24,7 @@ export default function Header({ title }) {
 						<a>Contact</a>
 					</Link>
 				</li>
-			</ul>
+			</ul> */}
 
 			<Typography className={title} use="headline2" tag="h1">
 				{title ? title : 'Default Title'}
