@@ -1,12 +1,25 @@
-/* Theme: more info: https://rmwc.io/styling-theming */
+/* Theme - info: https://rmwc.io/styling-theming */
 :root {
-	--mdc-theme-primary: #534fc0;
-	--mdc-theme-secondary: #b6ffe9;
-	--mdc-theme-error: #ba1b1b;
+	--mdc-theme-primary: #3c36f1;
+	--mdc-theme-secondary: #006b5a;
+	--mdc-theme-error: #ffb4a9;
 }
 
 @import '@material/theme/dist/mdc.theme.css';
 @import '@rmwc/theme/theme.css';
 
-/* Typography: more info: https://rmwc.io/typography */
+/* Typography - info: https://rmwc.io/typography */
 @import '@material/typography/dist/mdc.typography.css';
+
+/* Buttons - info: https://rmwc.io/buttons */
+@import '@material/button/dist/mdc.button.css';
+@import '@rmwc/icon/icon.css';
+@import '@material/ripple/dist/mdc.ripple.css';
+
+/* Tabs */
+@import '@material/tab-bar/dist/mdc.tab-bar.css';
+@import '@material/tab/dist/mdc.tab.css';
+@import '@material/tab-scroller/dist/mdc.tab-scroller.css';
+@import '@material/tab-indicator/dist/mdc.tab-indicator.css';
+@import '@material/ripple/dist/mdc.ripple.css';
+@import '@rmwc/icon/icon.css';

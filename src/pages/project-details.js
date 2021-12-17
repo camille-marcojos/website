@@ -1,11 +1,15 @@
+import React from 'react'
 import Header from '../components/Header'
-import { BackButton } from '../components/MyRouter'
+import NavBackButton from '../components/navigation/NavBackButton'
 
 export default function ProjectDetails() {
 	return (
 		<div>
-			<Header title="This is the project details page."></Header>
-			<BackButton />
+			<Header
+				title="Project Details"
+				description="I'm a project. These are the things that projects do.. lolz"
+			/>
+			<NavBackButton />
 		</div>
 	)
 }
