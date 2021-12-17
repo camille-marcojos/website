@@ -1,4 +1,3 @@
-import '@material/typography/dist/mdc.typography.css'
 import { Typography } from '@rmwc/typography'
 import Link from 'next/link'
 
@@ -17,18 +16,18 @@ export default function Header({ title }) {
 					</Link>
 				</li>
 				<li>
-					<Link href="/resources">
-						<a>Resources</a>
+					<Link href="/learn">
+						<a>Learn</a>
 					</Link>
 				</li>
 				<li>
-					<Link href="/connect-with-us">
-						<a>Connect with us</a>
+					<Link href="/contact">
+						<a>Contact</a>
 					</Link>
 				</li>
 			</ul>
 
-			<Typography use="headline1" className={title}>
+			<Typography className={title} use="headline2" tag="h1">
 				{title ? title : 'Default Title'}
 			</Typography>
 		</div>

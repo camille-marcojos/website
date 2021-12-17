@@ -4,7 +4,7 @@ import Header from '../components/Header'
 export default function HomePage() {
 	return (
 		<div>
-			<Header title="Home 😃" />
+			<Header title="Welcome to She.Codes PCC 😃" />
 		</div>
 	)
 }

@@ -1,9 +1,12 @@
-// theme
-// more info: https://rmwc.io/styling-theming
-$mdc-theme-primary: #534fc0;
-$mdc-theme-secondary: #b6ffe9;
-$mdc-theme-error: #ba1b1b;
+/* Theme: more info: https://rmwc.io/styling-theming */
+:root {
+	--mdc-theme-primary: #534fc0;
+	--mdc-theme-secondary: #b6ffe9;
+	--mdc-theme-error: #ba1b1b;
+}
 
-// import RMWC
 @import '@material/theme/dist/mdc.theme.css';
 @import '@rmwc/theme/theme.css';
+
+/* Typography: more info: https://rmwc.io/typography */
+@import '@material/typography/dist/mdc.typography.css';
