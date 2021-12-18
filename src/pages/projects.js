@@ -5,10 +5,8 @@ import Header from '../components/Header'
 export default function ProjectsPage() {
 	return (
 		<div>
-			<Header
-				title="Current Projects 🚀"
-				description="Create some cool things"
-			/>
+			<Header title="🚀 Projects " description="Create some cool things" />
+
 			<Link href="/project-details"> Project Details </Link>
 		</div>
 	)
