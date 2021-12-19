@@ -12,7 +12,7 @@
 
 [How To Contribute](#how-to-contribute)
 
-- [Beginner's Walkthrough](#beginner's-walkthrough)
+- [Beginner's Walkthrough](#beginners-walkthrough)
 
 [Style Guidelines](#style-guidelines)
 
@@ -150,11 +150,11 @@ Have fun!
 
 - When your code is ready for feedback push your branch remotely and create a pull request so it can be reviewed by our team.
 - Make sure your issue is linked to your pull request.
-- Once 2 reviewers approve your pull request, you can go ahead and merge it yourself.
+- Make sure a reviewer gets assigned to your pull request by selecting "She-Codes-Pcc/reviewers" from the drop down menu on your pull request.
+- Once 1 reviewer approves your pull request, you can go ahead and merge it yourself.
   - Keep in mind good commit message practices when merging.
 - Make sure to keep an eye on any comments or updates on your pull request in case the reviewers need you to make some changes or adjustments before merging your branch.
-- @GitHub Reviewers is a ping-able role on our discord. Please notify us if it's been more than 2 days and you don't see at least 2 reviewers assigned to your pull request.
-  - Please allow at least 1 more day after reviewers are assigned to complete their review before notifying us on discord.
+- @GitHub Reviewers is a ping-able role on our discord. Please go ahead and ping us to let us know you created a pull request or if it is taking a while for your pull request to get reviewed.
 
 ---
 
