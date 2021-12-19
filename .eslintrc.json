@@ -1,4 +1,5 @@
 {
+	"plugins": ["simple-import-sort"],
 	"extends": [
 		"eslint:recommended",
 		"google",
@@ -8,6 +9,8 @@
 		"plugin:prettier/recommended"
 	],
 	"rules": {
-		"require-jsdoc": "off"
+		"require-jsdoc": "off",
+		"simple-import-sort/imports": "error",
+		"simple-import-sort/exports": "error"
 	}
 }
