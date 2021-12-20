@@ -5,8 +5,7 @@
 
 	"editor.codeActionsOnSave": {
 		/* Fixes lint problems on save (when possible, some problems must be manually fixed) */
-		"source.fixAll": true,
-		"source.organizeImports": true
+		"source.fixAll": true
 	},
 
 	/* prettier */
