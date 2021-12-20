@@ -1,0 +1,17 @@
+// Typography - info: https://rmwc.io/typography
+@import '@material/typography/dist/mdc.typography.css';
+
+// Buttons - info: https://rmwc.io/buttons
+@import '@material/button/dist/mdc.button.css';
+@import '@rmwc/icon/icon.css';
+@import '@material/ripple/dist/mdc.ripple.css';
+
+// Theme - info: https://rmwc.io/styling-theming
+@import '@material/theme/dist/mdc.theme.css';
+@import '@rmwc/theme/theme.css';
+
+:root {
+	--mdc-theme-primary: #de95ff;
+	--mdc-theme-secondary: #006b5a;
+	--mdc-theme-error: #ffb4a9;
+}
