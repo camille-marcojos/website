@@ -1,12 +1,12 @@
 import { Button } from '@rmwc/button'
 import Link from 'next/link'
 
-import NavBackButton from './NavBackButton'
+import RmwcTopAppBar from './TopAppBar'
 
 export default function MyRouter() {
 	return (
 		<div>
-			<NavBackButton />
+			<RmwcTopAppBar />
 
 			{/* TODO: Fix error in dev console: findDOMNode is deprecated in StrictMode */}
 			<Link href="/" passHref>
