@@ -7,30 +7,39 @@ import {
 } from '@rmwc/drawer'
 import { List, ListItem } from '@rmwc/list'
 import { SimpleTopAppBar, TopAppBarFixedAdjust } from '@rmwc/top-app-bar'
+import { useRouter } from 'next/router'
 import * as React from 'react'
 
 export default function RmwcTopAppBar() {
 	const [open, setOpen] = React.useState(false)
+	const router = useRouter()
 
 	return (
 		<>
 			<Drawer modal open={open} onClose={() => setOpen(false)}>
 				<DrawerHeader>
-					<DrawerTitle>DrawerHeader</DrawerTitle>
+					<DrawerTitle>She.Codes PCC</DrawerTitle>
 					<DrawerSubtitle>Subtitle</DrawerSubtitle>
 				</DrawerHeader>
 				<DrawerContent>
 					<List>
-						<ListItem>Cookies</ListItem>
-						<ListItem>Pizza</ListItem>
-						<ListItem>Icecream</ListItem>
+						<ListItem onClick={() => router.push('./')}>Home</ListItem>
+						<ListItem onClick={() => router.push('./projects')}>
+							Projects
+						</ListItem>
+						<ListItem onClick={() => router.push('./resources')}>
+							Resources
+						</ListItem>
+						<ListItem onClick={() => router.push('./connect')}>
+							Connect
+						</ListItem>
 					</List>
 				</DrawerContent>
 			</Drawer>
 
 			<SimpleTopAppBar
 				fixed
-				title="test"
+				title="She.Codes PCC"
 				navigationIcon
 				onNav={() => setOpen(!open)}
 			/>

@@ -16,13 +16,20 @@
 // List - info: https://rmwc.io/lists
 @import '@material/list/dist/mdc.list.css';
 
-// PLACE ALL OTHER IMPORTS ABOVE THIS LINE!!!
+//
+// Place all other imports above this line
+//
 // Theme - info: https://rmwc.io/styling-theming
 @import '@material/theme/dist/mdc.theme.css';
 @import '@rmwc/theme/theme.css';
 
 :root {
-	--mdc-theme-primary: #de95ff;
-	--mdc-theme-secondary: #006b5a;
+	--mdc-theme-primary: #a08cf7;
+	--mdc-theme-secondary: #489177;
 	--mdc-theme-error: #ffb4a9;
 }
+
+//
+// Place all other sass/css below this line :)
+// The theme just has to be above everything
+//
