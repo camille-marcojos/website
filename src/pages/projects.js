@@ -10,8 +10,8 @@ export default function ProjectsPage() {
 			<Head>
 				<title>She.Codes PCC Projects</title>
 			</Head>
-			<Header title="🚀 Projects " description="Create some cool things" />
 
+			<Header title="🚀 Projects " description="Create some cool things" />
 			<Link href="/project-details" class="myLink">
 				Project Details
 			</Link>

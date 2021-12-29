@@ -9,6 +9,7 @@ export default function ResourcesPage() {
 			<Head>
 				<title>She.Codes PCC Resources</title>
 			</Head>
+
 			<Header title="💻 Resources" description="Learn some cool stuff" />
 		</div>
 	)

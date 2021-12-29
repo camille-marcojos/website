@@ -9,6 +9,7 @@ export default function ConnectPage() {
 			<Head>
 				<title>She.Codes PCC Connect Page</title>
 			</Head>
+
 			<Header
 				title="👋 Hi, Connect with us "
 				description="Meet peeps interested in coding things"

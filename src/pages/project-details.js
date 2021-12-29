@@ -9,6 +9,7 @@ export default function ProjectDetails() {
 			<Head>
 				<title>She.Codes PCC Project Name</title>
 			</Head>
+
 			<Header
 				title="🕵️ Project Details "
 				description="I'm a project. These are the things that projects do.. lolz"
