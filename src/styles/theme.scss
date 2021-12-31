@@ -6,12 +6,91 @@
 @import '@rmwc/icon/icon.css';
 @import '@material/ripple/dist/mdc.ripple.css';
 
+// Top App Bar - info: https://rmwc.io/top-app-bar
+@import '@material/top-app-bar/dist/mdc.top-app-bar.css';
+@import '@material/icon-button/dist/mdc.icon-button.css';
+
+// Drawer - info: https://rmwc.io/drawers
+@import '@material/drawer/dist/mdc.drawer.css';
+
+// List - info: https://rmwc.io/lists
+@import '@material/list/dist/mdc.list.css';
+
+//
+// Place all other imports above this line
+//
 // Theme - info: https://rmwc.io/styling-theming
 @import '@material/theme/dist/mdc.theme.css';
 @import '@rmwc/theme/theme.css';
 
 :root {
-	--mdc-theme-primary: #de95ff;
-	--mdc-theme-secondary: #006b5a;
+	--mdc-theme-primary: #590f6b;
+	--mdc-theme-on-primary: #e0e0ff;
+	--mdc-theme-secondary: #00aaa2;
+	--mdc-theme-on-secondary: #003731;
+	--theme-secondary-highlight: #46fdf4;
+	--theme-accent: #ffb68c;
+	--theme-on-accent: #542100;
 	--mdc-theme-error: #ffb4a9;
+	--mdc-theme-on-error: #680003;
+	--mdc-theme-background: #1b1b1f;
+	--mdc-theme-on-background: #e4e1e6;
+	--mdc-theme-primary-container: #393d8f;
+	--mdc-theme-on-primary-container: #e0e0ff;
+	--mdc-theme-surface: #1b1b1f;
+	--mdc-theme-on-surface: rgb(228 225 230 / 87%);
+}
+
+//
+// Place all other sass/css below this line :)
+// The theme just has to be above everything
+//
+html,
+body {
+	font-family: Roboto, sans-serif;
+	background-color: var(--mdc-theme-background);
+	color: var(--mdc-theme-on-background);
+	@font-face {
+		font-family: Roboto;
+		src: url('/public/fonts/Roboto-Regular-webfont.woff') format('woff');
+	}
+}
+
+// Links
+a:any-link {
+	cursor: pointer;
+	color: var(--theme-secondary-highlight);
+	text-decoration: underline;
+}
+
+a:any-link:hover {
+	text-decoration: none;
+}
+
+// Buttons
+.mdc-button:not(:disabled) {
+	color: var(--mdc-theme-secondary);
+}
+
+.mdc-button:not(:disabled):hover,
+.mdc-button:not(:disabled):active {
+	color: var(--theme-secondary-highlight);
+}
+
+// Drawer
+body .mdc-drawer {
+	background-color: var(--mdc-theme-surface);
+}
+
+body .mdc-drawer .mdc-list-item:not(.mdc-list-item--activated) {
+	color: var(--theme-secondary-highlight);
+}
+
+.mdc-drawer .mdc-drawer__title,
+.mdc-drawer .mdc-drawer__subtitle {
+	color: var(--mdc-theme-on-primary);
+}
+
+.mdc-drawer__header {
+	background-color: var(--mdc-theme-primary);
 }
